@@ -140,6 +140,47 @@
              */
 
             #endregion
+
+            #region Q4  Extension Methods 
+
+            //QA
+            //Q: What is an Extension Method? 
+
+            /*Ans:
+             * Extension Method: 
+             * A method that allows you to add a new method to an existing type without modifying or inheriting from it.
+             */
+
+            //============================================================================================
+
+            //QB:
+            //Q: What keyword must be used in the first parameter of an extension method? 
+
+            /*Ans:
+             *  keyword ==> this.
+             */
+
+            //============================================================================================
+
+            //QC
+            //Q: Where must an extension method be declared?
+
+            /*Ans:
+             * Declared in static calss and must be static method
+             */
+
+            //============================================================================================
+
+            //QD
+            //Q:  Can an extension method access private members of the class it extends? 
+
+            /*Ans:
+             *  cannot access the private members of the class it extends
+             *  because it is defined outside that class and does not have access to its private members.
+             */
+
+
+            #endregion
             #endregion
         }
     }
