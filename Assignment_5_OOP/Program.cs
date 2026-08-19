@@ -1,4 +1,7 @@
-﻿namespace Assignment_5_OOP
+﻿using Assignment_5_OOP.Delivery;
+using Assignment_5_OOP.Shipment__Child;
+
+namespace Assignment_5_OOP
 {
     internal class Program
     {
@@ -182,6 +185,104 @@
 
             #endregion
             #endregion
+
+            #region Part 02 — Practical
+            //DeliveryUtilities.PrintSeparator();
+            //DeliveryUtilities.PrintSystemTitle();
+            //DeliveryUtilities.PrintSeparator();
+
+            //DeliveryAddress d1 = new DeliveryAddress("Cairo");
+            //StandardShipment ss = new StandardShipment("SH001", "Laptop", 3, d1, 80);
+            //ExpressShipment es = new ExpressShipment("SH002", "Mobile Phone", 2, 60, d1, 30); DeliveryUtilities.PrintSeparator();
+            //InternationalShipment Is = new InternationalShipment("SH003", "Television", 8, 120, d1, "Germany", 100); Console.WriteLine("Creating Shipments... \n");
+            //DeliveryUtilities.PrintSeparator();
+
+            //Console.WriteLine($"{ss.GetType().Name} Created");
+            //Console.WriteLine($"{es.GetType().Name} Created");
+            //Console.WriteLine($"{Is.GetType().Name} Created\n");
+            //Console.WriteLine($"Total Shipments Created : {Shipment.TotalShipmentsCreated}\n");
+            ////=============================================================================================
+            //DeliveryUtilities.PrintSeparator();
+            //Console.WriteLine("Object Copying\n");
+            //DeliveryUtilities.PrintSeparator();
+
+            //Shipment original1 = new Shipment("SH001", "Laptop", 3, 80, d1);
+            //Shipment assigned = original1;
+            //Console.WriteLine($"Original Shipment  : {original1.TrackingCode}");
+            //Console.WriteLine($"assigned Shipment  : {assigned.TrackingCode}\n");
+
+            //Console.WriteLine($"Same Object : {object.ReferenceEquals(original1, assigned)}\n");
+            ////======================================================================================================
+            //DeliveryAddress d2 = new DeliveryAddress("Cairo");
+            //Shipment original2 = new Shipment("SH001", "Laptop", 3, 80, d2);
+            //Console.WriteLine("------------------------------------------\n");
+            //Console.WriteLine("Shallow Copy\n");
+            //Console.WriteLine("------------------------------------------\n");
+
+            //Shipment Copied1 = original2.ShallowCopy();
+
+            //Console.WriteLine($"Original2 Shipment Address : {original2.Destination.City}");
+            //Console.WriteLine($"Copied  Shipment Address : {Copied1.Destination.City}\n");
+
+            //Copied1.Destination.City = "Giza";
+
+            //Console.WriteLine("Changing copied shipment address...\n");
+            //Console.WriteLine($"Original2 Shipment Address : {original2.Destination.City}");
+            //Console.WriteLine($"Copied1  Shipment Address : {Copied1.Destination.City}\n");
+
+            //if (original2.Destination.GetHashCode() == Copied1.Destination.GetHashCode())
+            //{
+            //    Console.WriteLine($"Same DeliveryAddress Object : True");
+            //}
+            //else
+            //    Console.WriteLine($"Same DeliveryAddress Object : False");
+
+            ////==========================================================================================================
+            //DeliveryAddress d3 = new DeliveryAddress("Cairo");
+            //Shipment original3 = new Shipment("SH001", "Laptop", 3, 80, d3);
+            //Console.WriteLine("------------------------------------------\n");
+            //Console.WriteLine("Deep Copy\n");
+            //Console.WriteLine("------------------------------------------\n");
+            //Shipment Copied2 = original3.DeepCopy();
+
+            //Console.WriteLine($"Original3 Shipment Address : {original3.Destination.City}");
+            //Console.WriteLine($"Copied2  Shipment Address : {Copied2.Destination.City}\n");
+
+            //Copied2.Destination.City = "Giza";
+
+            //Console.WriteLine("Changing copied shipment address...\n");
+            //Console.WriteLine($"Original3 Shipment Address : {original3.Destination.City}");
+            //Console.WriteLine($"Copied2  Shipment Address : {Copied2.Destination.City}\n");
+
+            //if (original3.Destination.GetHashCode() == Copied2.Destination.GetHashCode())
+            //{
+            //    Console.WriteLine($"Same DeliveryAddress Object : True");
+            //}
+            //else
+            //    Console.WriteLine($"Same DeliveryAddress Object : False");
+            ////==============================================================================
+            //DeliveryUtilities.PrintSeparator();
+            //Console.WriteLine("Extension Methods \n");
+            //DeliveryUtilities.PrintSeparator();
+
+            //Console.WriteLine($"{ShipmentExtensions.GetSummary(ss)}\n");
+            //Console.WriteLine($"{ShipmentExtensions.GetSummary(es)}\n");
+            //Console.WriteLine($"{ShipmentExtensions.GetSummary(Is)}\n");
+
+            //Console.WriteLine($"{ss.TrackingCode} is Delivered {ShipmentExtensions.IsDelivered(ss)}\n");
+            //Console.WriteLine($"{ss.TrackingCode} is Delivered {ShipmentExtensions.IsDelivered(Is)}\n");
+
+            #endregion
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
