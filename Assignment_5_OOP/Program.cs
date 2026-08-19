@@ -35,6 +35,57 @@
                 to same data in heap
              */
             #endregion
+
+            #region Q2  Shallow Copy vs Deep Copy
+
+            //QA
+            //Q: What is a Shallow Copy? 
+
+            /*Ans:
+             * Creat a new object and copies all value_typ fileds 
+             * For refernce_typ fileds only refernce (linkes) are copied - bothe objects point to
+               the same nasted objects
+             */
+
+            //==========================================================
+
+            //QB:
+            //Q: What is a Deep Copy? 
+
+            /*Ans:
+             * Creat a new object and recursively copies all nasted objects
+             * The original and the copy are completely independent
+             */
+
+            //==========================================================
+
+            //QC:
+            //Q: What happens to reference-type members when a Shallow Copy is created? 
+
+            /*Ans:
+             * copy address so both point to same data in heap
+             */
+
+            //==========================================================
+
+            //QD
+            //Q:What happens to reference-type members when a Deep Copy is created? 
+
+            /*Ans:
+             * Creat new object with thier own copies of all nasted objects
+             */
+
+            //==========================================================
+
+            //QE
+            //Q: Give one situation where Deep Copy would be safer than Shallow Copy
+
+            /*Ans:
+             * Deep Copy is safer when we need two completely independent objects
+             * For example ==> when copying  object that contains an Address object
+             * Deep Copy changes the copied Address do not affect the original object
+             */
+            #endregion
             #endregion
         }
     }
